@@ -72,7 +72,7 @@ def aggregatedatanew():
         ## Create a dict, where the key is the field and the value is a list containing a bool for whether the field is a time related field, 
         ## and the name of the table the field is located in
         ## Without further documentation of the fields, I am assuming that firstsms, lastsms, and start are the only time related fields
-        ## I am also assuming that these 3 fields are stored as hh:mm:ss date/time types
+        ## I am also assuming that these 3 fields are stored in hh:mm:ss format
         var_dict = {'status': [False, user_info], 'firstsms': [True, sms_info], 'lastsms': [True, sms_info], 'contact': [False, user_info],
         'start': [True, user_info], 'engaged': [False, user_info], 'morethanonehour': [False, user_info], 'morethanonehourclosed': [False, user_info]}
 
